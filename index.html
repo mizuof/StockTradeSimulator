@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>StockTradeSimulator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="disclaimer-modal" id="disclaimer-modal">
+        <h3><center>声明</center></h3>
+        <p><strong style="color:red;">郑重提示：本系统为模拟股票交易平台，仅供娱乐体验!<br>任何操作均不构成投资建议，使用者需自行承担操作风险，平台概不承担经济损失责任。</strong></p>
+        <h4>操作指南</h4>
+        <ul style="line-height:1.8">
+            <strong><li>▶介绍：<br> 通过企业列表选取目标股票,选则购入数量,点击「买入/卖出」即时完成交易（无交易冷却机制）</li>
+            <li>▶ 玩法：<br> 支持10秒内进行实时交易,通过捕捉股价波动产生的价差实现盈利</li>
+            <li>▶ 更新：<br> • 3.20 更新：优化了成就系统和存档功能<br> •由于开发时间过短，功能不全，后续将持续完善<br> •或将不定期进行体验优化更新</li>
+            </strong></ul>
+        <small style="color:#666;">注：所有交易数据均为模拟演示，不反映真实市场情况</small>
+        <button id="close-modal" style="margin-top:20px;padding:5px;">关闭</button>
+    </div>
+
+    <div class="achievements-modal" id="achievements-modal">
+        <h4>成就列表</h4>
+        <div id="achievements-progress">0/10</div>
+        <div id="achievements-list"></div>
+    </div>
+
+    <div class="stock-list" id="stocks-list"></div>
+
+    <div class="trade-panel">
+        <h2 class="time-display" id="current-time"></h2>
+        <h2>💰 当前资金：<span id="balance">500,000.00</span></h2>
+        <h2 id="holdings-value">📦 持有资产：¥<span id="holdings-balance">0.00</span> <span id="holdings-change" class="up">+0.00%</span></h2>
+        <div id="current-stock">
+            <h3>📈 当前选中：<span id="selected-stock">-</span></h3>
+            <p>价格：<span id="stock-price">-</span></p>
+            <p>涨跌：<span id="stock-change">-</span></p>
+        </div>
+        <div class="qty-selector">
+            <button onclick="selectQty('all')">全部</button>
+            <button onclick="selectQty('half')">一半</button>
+            <button onclick="selectQty(1000)">1000股</button>
+            <button onclick="selectQty(500)">500股</button>
+            <button onclick="selectQty(100)">100股</button>
+        </div>
+        <div class="action-btns">
+            <button class="buy-btn" onclick="executeTrade('buy')">买入</button>
+            <button class="sell-btn" onclick="executeTrade('sell')">卖出</button>
+        </div>
+        <div id="position">
+            <h3>📦 当前持仓</h3>
+            <div id="holdings"></div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="confirmation" id="confirmation">
+            <p id="confirmation-message"></p>
+            <p>当前资金：¥<span id="current-balance">500,000.00</span> → 剩余资金：¥<span id="remaining-balance">500,000.00</span></p>
+            <div class="action-btns">
+                <button class="buy-btn" onclick="confirmTrade(tradeType)">确认</button>
+                <button onclick="cancelTrade()">取消</button>
+            </div>
+        </div>
+
+        <div class="ranking-btns">
+            <button onclick="toggleRankingOrder()">切换排序</button>
+        </div>
+        <div class="rankings" id="rankings"></div>
+    </div>
+
+    <button id="achievement-btn" class="achievement-btn">🏆</button>
+    <button onclick="resetData()" style="position: fixed; bottom: 60px; right: 10px; background-color: #E6E6FA; color: white; padding: 10px 15px; border-radius: 5px; cursor: pointer; z-index: 102;">重置数据</button>
+    <div id="achievement-notification" class="achievement-notification"></div>
+
+    <footer>
+        <p>© 2025 StockTradeSimulator</p>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>
