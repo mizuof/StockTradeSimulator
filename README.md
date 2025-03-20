@@ -43,11 +43,6 @@ StockTradeSimulator 是一个基于Web的实时股票模拟交易系统，旨在
 - 建议新功能
 - 改进代码结构
 - 优化UI设计
-
-### 许可证
-
-MIT License | [查看详情](#)
-
 ---
 
 ## English Introduction
@@ -90,9 +85,5 @@ We welcome contributions including but not limited to:
 - Suggesting new features
 - Improving code structure
 - Enhancing UI design
-
-### License
-
-MIT License | [View Details](#)
 
    
