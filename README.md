@@ -26,13 +26,12 @@ StockTradeSimulator 是一个基于Web的实时股票模拟交易系统，旨在
 
 ### 快速开始
 
-1. 克隆仓库：
-bash git clone https://github.com/yourusername/StockTradeSimulator.git
+1. 克隆仓库：bash git clone https://github.com/mizuof/StockTradeSimulator.git
 
 
-3. 直接打开`index.html`或在本地服务器运行。
-4. 首次使用时，请仔细阅读免责声明。
-5. 开始你的股票交易之旅！
+2. 直接打开`index.html`或在本地服务器运行。
+3. 首次使用时，请仔细阅读免责声明。
+4. 开始你的股票交易之旅！
 
 **提示**：浏览器需启用本地存储功能。
 
@@ -47,7 +46,7 @@ bash git clone https://github.com/yourusername/StockTradeSimulator.git
 
 ### 许可证
 
-MIT License | [查看详情](Https://opensource.org/licenses/MIT)
+MIT License | [查看详情](#)
 
 ---
 
@@ -75,12 +74,11 @@ StockTradeSimulator is a web-based real-time stock trading simulator designed to
 
 ### Quick Start
 
-1. Clone the repository:
-bash git clone https://github.com/yourusername/StockTradeSimulator.git
+1. Clone the repository:bash git clone https://github.com/mizuof/StockTradeSimulator.git
 
-3. Open `index.html` directly or run on a local server.
-4. Read the disclaimer carefully before starting.
-5. Begin your trading journey!
+2. Open `index.html` directly or run on a local server.
+3. Read the disclaimer carefully before starting.
+4. Begin your trading journey!
 
 **Note**: Ensure localStorage is enabled in your browser.
 
@@ -95,6 +93,6 @@ We welcome contributions including but not limited to:
 
 ### License
 
-MIT License | [View Details]([#](Https://opensource.org/licenses/MIT))
+MIT License | [View Details](#)
 
    
