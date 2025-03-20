@@ -25,9 +25,6 @@
 
 ## 快速开始 🚦
 1. 克隆仓库：
-```bash
-git clone https://github.com/yourusername/StockTradeSimulator.git
-DiffCopyInsert
 直接打开index.html或在本地服务器运行
 首次使用请仔细阅读免责声明
 开始你的股神之旅！
