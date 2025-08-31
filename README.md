@@ -1,4 +1,4 @@
-# StockTradeSimulator - 股票模拟交易平台4.0
+# StockTradeSimulator - 股票模拟交易平台
 
 [中文](#中文介绍) | [English](#English-Introduction)
 
